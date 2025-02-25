@@ -16,7 +16,7 @@ export class ShoppingItemsService {
   }
   removeItems(item: string): void {
     let index = this.items.findIndex((it) => {
-      it === item;
+      return it === item;
     });
     if (index != -1) {
       this.items.splice(index, 1);
